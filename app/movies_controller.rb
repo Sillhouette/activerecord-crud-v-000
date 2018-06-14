@@ -23,7 +23,6 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block(attribute_hash = {title: "Home Alone", release_date: 1990})
-  binding.pry
   Movie.create do |m|
     m.title = attribute_hash[:title]
     m.release_date = attribute_hash[:release_date]
