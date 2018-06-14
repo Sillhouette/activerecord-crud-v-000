@@ -24,11 +24,8 @@ end
 
 def can_be_created_in_a_block
   Movie.create do |m|
-    m.string :title
-    m.datetime :release_date
-    m.string :director
-    m.string :lead
-    m.boolean :in_theaters
+    m.title = "Home Alone"
+    m.release_date = 1990
   end
 end
 
